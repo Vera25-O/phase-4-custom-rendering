@@ -7,6 +7,7 @@ class CheesesController < ApplicationController
   end
 
   # GET /cheeses/:id
+  
   def show
     cheese = Cheese.find_by(id: params[:id])
     render json: cheese
